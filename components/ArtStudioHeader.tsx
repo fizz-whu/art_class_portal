@@ -39,9 +39,11 @@ const ArtStudioHeader = () => {
         <TouchableOpacity onPress={() => console.log('Gallery pressed')}>
           <Text style={styles.navText}>Gallery</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => console.log('About pressed')}>
-          <Text style={styles.navText}>About</Text>
-        </TouchableOpacity>
+        <Link href="/(tabs)/about" asChild> 
+          <TouchableOpacity>
+            <Text style={styles.navText}>About</Text>
+          </TouchableOpacity>
+        </Link>
         <TouchableOpacity onPress={() => console.log('Contact pressed')}>
           <Text style={styles.navText}>Contact</Text>
         </TouchableOpacity>
